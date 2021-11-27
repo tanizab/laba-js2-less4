@@ -24,15 +24,16 @@ button {
 .numberCard {
     position: relative;
     top: 80px;
-    left: 30px;
+    left: 10px;
 }
 .user {
     position: relative;
     top: 130px;
-    left: 30px;
+    left: 10px;
 }
 .icon {
-    height: 20px;
-    width: 20px;
-    background-size: contain;
+    position: relative;
+    top: 105px;
+    right: 10px;
+    text-align: right;
 }

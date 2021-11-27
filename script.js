@@ -16,10 +16,14 @@ function getNames(names){ //Отдает рандомное имя
     let n = getRandom(names.length);
     return names[n];
 }
+function getPay(paySistem){ //Отдает рандомное имя
+    let n = getRandom(paySistem.length);
+    return paySistem[n];
+}
 
 let main = document.body.childNodes[1];
 function addBox() {
-    main.innerHTML += `<div class="box"><div class="numberCard">${number}</div><div class="user">${getNames(names)}</div><div class="icon"></div></div>`;
+    main.innerHTML += `<div class="box"><div class="numberCard">${number}</div><div class="user">${getNames(names)}</div><div class="icon">${getPay(paySistem)}</div></div>`;
 }
 
 let number = [];
@@ -104,5 +108,9 @@ let	names = [
     "Яромир",
     "Ярослав"
 ];
+
+let paySistem = [
+    "visa", "master card", "jcb", "union card", "dci", "union pay"
+]
 
 
