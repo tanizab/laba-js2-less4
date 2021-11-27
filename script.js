@@ -13,10 +13,24 @@ const getRandom = function(max = 10, min = 0) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+let number = [];
+let c = 16;
+let str = "";
+let zero = " ";
+while(c--) {
+    str += getRandom();
+    if (c % 4 === 0){
+        number.push(str);
+        str = "";
+    }
+}
+console.log(number);
+
+
+
+
+
 let main = document.body.childNodes[1];
 function addBox() {
-    main.innerHTML += `<div class="box"><div class="number">9999 0000 7777 8888</div><div class="user">Ivanov Ivan Ivanovich</div><div class="icon"></div></div>`;
-
-
+    main.innerHTML += `<div class="box"><div class="numberCard">${number}</div><div class="user">Ivanov Ivan Ivanovich</div><div class="icon"></div></div>`;
 }
-
